@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Jinux Hao 的个人主页：遥感建模、并行计算与空间可视化，以及 MATLAB、C++ 和 Web 开发项目。">
+  <meta name="theme-color" content="#f7f6f3">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Jinux Hao · 遥感 / 计算 / 可视化">
+  <meta property="og:description" content="从遥感模型到并行算法，再到可交互的空间表达。探索 Jinux Hao 的开源项目与技术实践。">
+  <meta property="og:url" content="https://jinuxhao.github.io/">
+  <link rel="canonical" href="https://jinuxhao.github.io/">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/main.js" defer></script>
+  <title>Jinux Hao · 遥感 / 计算 / 可视化</title>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-en="Skip to content">跳转到正文</a>
+  <header class="site-header">
+    <a class="wordmark" href="#home" aria-label="Jinux Hao · Home">JH<span class="wordmark-dot">.</span></a>
+    <nav aria-label="主导航" data-en-aria-label="Main navigation">
+      <a href="#about" data-en="About">关于</a>
+      <a href="#focus" data-en="Focus">方向</a>
+      <a href="#projects" data-en="Projects">项目</a>
+      <a href="#contact" data-en="Contact">联系</a>
+    </nav>
+    <div class="header-tools">
+      <button id="language-toggle" class="text-button" hidden aria-label="Switch to English">EN</button>
+      <button id="theme-toggle" class="theme-button" hidden aria-label="切换到深色主题" title="切换主题">
+        <svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 15.2A8.5 8.5 0 0 1 8.8 4 8.5 8.5 0 1 0 20 15.2Z"/></svg>
+        <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="home" class="hero section-shell">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> PERSONAL FIELDNOTES / 01</p>
+        <p class="hero-intro" data-en="Hello, I'm">你好，我是</p>
+        <h1>Jinux Hao<span class="accent">.</span></h1>
+        <p class="hero-statement" data-en="Reading the Earth. Computing the details.">感知地表，<br>计算细节。</p>
+        <p class="hero-description" data-en="Exploring remote sensing, scientific computing and spatial visualization — from models and algorithms to interactive experiences.">探索遥感、科学计算与空间可视化。<br>从模型与算法出发，把数据转化为可理解的表达。</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects"><span data-en="Explore projects">浏览项目</span><span aria-hidden="true">↗</span></a>
+          <a class="button button-quiet" href="https://github.com/JinuxHao">GitHub <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <figure class="field-figure">
+        <div class="figure-top"><span>FIELD STUDY</span><span>RS / HPC / GEO</span></div>
+        <svg class="terrain" viewBox="0 0 480 470" role="img" aria-labelledby="terrain-title terrain-desc">
+          <title id="terrain-title">地形等高线与观测网格</title>
+          <desc id="terrain-desc">抽象等高线穿过采样网格，连接遥感观测、计算和可视化三个主题，不代表实际地理数据。</desc>
+          <defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="currentColor" stroke-width=".6" opacity=".18"/></pattern></defs>
+          <rect x="20" y="20" width="440" height="420" fill="url(#grid)"/>
+          <circle cx="262" cy="232" r="145" class="terrain-disc"/>
+          <g class="contours" fill="none" stroke="currentColor" stroke-width="1.2">
+            <path d="M-20 392C32 304 48 392 106 301S171 188 223 236 275 335 335 258 374 129 500 157"/>
+            <path d="M-20 368C31 281 54 364 109 278S171 167 227 213 280 307 338 234 380 104 500 135"/>
+            <path d="M-20 344C34 254 58 338 112 254S177 142 231 189 282 281 342 210 383 82 500 113"/>
+            <path d="M-20 320C40 227 60 311 117 230S183 119 237 166 290 255 350 185 389 58 500 91"/>
+            <path d="M-20 296C42 199 68 288 122 205S189 93 242 141 297 231 356 162 396 34 500 69"/>
+            <path d="M-20 272C46 173 72 260 127 181S195 70 249 118 303 204 364 138 401 12 500 47"/>
+            <path d="M-20 248C51 147 80 234 134 158S202 47 257 95 313 179 372 115 410-12 500 25"/>
+            <path d="M-20 416C30 331 47 420 102 326S166 213 219 259 269 362 328 283 366 153 500 179"/>
+            <path d="M-20 440C28 358 43 446 98 351S160 238 212 284 262 390 323 308 360 176 500 201"/>
+          </g>
+          <g class="plot-lines" fill="none" stroke="currentColor"><rect x="132" y="119" width="208" height="208" stroke-dasharray="4 6"/><path d="M236 93v260M106 223h260" opacity=".5"/><circle cx="236" cy="223" r="9"/><circle cx="236" cy="223" r="3" fill="currentColor"/></g>
+          <g class="plot-labels" fill="currentColor"><text x="142" y="109">OBSERVATION WINDOW</text><text x="251" y="244">SAMPLE / 01</text><text x="28" y="431">MODEL → COMPUTE → EXPLORE</text></g>
+        </svg>
+        <figcaption><span data-en="A closer look at the world">以计算，靠近真实世界</span><span class="figure-index">FIG. 001</span></figcaption>
+      </figure>
+      <div class="hero-meta"><span>WUHAN UNIVERSITY</span><span data-en="China · Building & learning">中国 · 持续学习与实践</span><a href="#about" data-en="Scroll to discover ↓">向下探索 ↓</a></div>
+    </section>
+
+    <section id="about" class="section-shell editorial-section">
+      <div class="section-label"><span class="section-number">01 / ABOUT</span><h2 data-en="A little about me">关于我</h2></div>
+      <div class="section-body about-body">
+        <p class="lead" data-en="I enjoy following a question all the way from the model to the code, and from the result to a clear visual explanation.">我喜欢沿着一个问题，<br>从模型走到代码，从结果走向直观表达。</p>
+        <p data-en="My public projects span vegetation radiative transfer and LAI retrieval, parallel matrix multiplication, 3D geospatial visualization and interactive web applications. This site brings those explorations together.">我的公开项目涉及植被辐射传输模型与 LAI 反演、矩阵乘法并行化、三维地理空间可视化，以及交互式 Web 应用。这里记录这些方向上的学习与实践，也作为项目与代码的统一入口。</p>
+        <div class="about-details"><div><span class="detail-label" data-en="Affiliation">所在机构</span><span>Wuhan University</span></div><div><span class="detail-label" data-en="Approach">实践方式</span><span data-en="Model · Implement · Visualize">建模 · 实现 · 可视化</span></div></div>
+      </div>
+    </section>
+
+    <section id="focus" class="section-shell editorial-section">
+      <div class="section-label"><span class="section-number">02 / FOCUS</span><h2 data-en="Areas of exploration">探索方向</h2><p data-en="Three connected perspectives.">三个彼此连接的视角。</p></div>
+      <div class="section-body focus-list">
+        <article class="focus-item"><span class="focus-index">A</span><div><h3 data-en="Remote sensing & modeling">遥感与物理建模</h3><p data-en="Using PROSAIL and lookup tables to explore the relationship between spectral reflectance and vegetation parameters, including LAI retrieval.">围绕 PROSAIL 模型与查找表方法，探索光谱反射率与植被参数的联系，以及叶面积指数（LAI）的反演过程。</p><span class="topic-note">REMOTE SENSING / PROSAIL / LAI</span></div></article>
+        <article class="focus-item"><span class="focus-index">B</span><div><h3 data-en="Parallel & scientific computing">并行与科学计算</h3><p data-en="Implementing parallel matrix multiplication with MPI and OpenMP, exploring task decomposition and the relationship between computation and communication.">使用 MPI 与 OpenMP 实现矩阵乘法并行化，理解任务划分，以及计算与通信之间的关系。</p><span class="topic-note">C++ / MPI / OPENMP</span></div></article>
+        <article class="focus-item"><span class="focus-index">C</span><div><h3 data-en="Spatial & interactive visualization">空间与交互可视化</h3><p data-en="Presenting 3D Tiles with Cesium, and building interactive applications with Vue and React to make data easier to explore.">利用 Cesium 呈现 3D Tiles，以 Vue 和 React 构建可交互应用，让空间数据与应用逻辑更容易被理解。</p><span class="topic-note">CESIUM / VUE / REACT</span></div></article>
+      </div>
+    </section>
+
+    <section id="projects" class="section-shell projects-section">
+      <div class="section-heading"><div><span class="section-number">03 / SELECTED WORK</span><h2 data-en="From ideas to code">把想法写成代码</h2></div><a class="inline-link" href="https://github.com/JinuxHao?tab=repositories"><span data-en="All repositories">全部仓库</span> ↗</a></div>
+      <div class="project-toolbar" hidden><div class="filters" role="group" aria-label="项目筛选" data-en-aria-label="Filter projects"><button class="filter is-active" data-filter="all" aria-pressed="true" data-en="All">全部</button><button class="filter" data-filter="science" aria-pressed="false" data-en="Scientific computing">科学计算</button><button class="filter" data-filter="web" aria-pressed="false" data-en="Web & visualization">Web 与可视化</button></div><span id="project-count" aria-live="polite" aria-atomic="true">4 个项目</span></div>
+      <div class="project-grid">
+        <article class="project-card" data-category="science"><div class="card-top"><span class="project-category" data-en="Remote sensing">遥感建模</span><span class="card-number">01</span></div><h3><a href="https://github.com/JinuxHao/LUT_PROSAIL">LUT_PROSAIL <span aria-hidden="true">↗</span></a></h3><p data-en="A MATLAB workflow using PROSAIL to calculate reflectance, build lookup tables and retrieve leaf area index.">使用 MATLAB 与 PROSAIL 计算不同参数下的反射率，构建查找表，开展叶面积指数（LAI）反演。</p><div class="project-tags"><span>MATLAB</span><span>PROSAIL</span><span>LAI</span></div><p class="card-footer" data-en="Radiative transfer → Lookup table → Retrieval">辐射传输 → 查找表 → 参数反演</p></article>
+        <article class="project-card" data-category="science"><div class="card-top"><span class="project-category" data-en="Parallel computing">并行计算</span><span class="card-number">02</span></div><h3><a href="https://github.com/JinuxHao/Multiply_mat_on_MPI">Multiply_mat_on_MPI <span aria-hidden="true">↗</span></a></h3><p data-en="Parallel matrix multiplication implemented with OpenMP and MPI, exploring shared-memory and distributed-memory programming.">使用 OpenMP、MPI 等并行工具实现矩阵乘法，实践共享内存与分布式内存下的并行编程。</p><div class="project-tags"><span>C++</span><span>MPI</span><span>OpenMP</span></div><p class="card-footer" data-en="Matrix operations × Parallel programming">矩阵运算 × 并行编程</p></article>
+        <article class="project-card" data-category="web"><div class="card-top"><span class="project-category" data-en="Geospatial visualization">空间可视化</span><span class="card-number">03</span></div><h3><a href="https://github.com/JinuxHao/Cesium-vue">Cesium-vue <span aria-hidden="true">↗</span></a></h3><p data-en="A Cesium and Vue project that loads 3D Tiles from Tomcat for browser-based geospatial visualization.">结合 Cesium 与 Vue，从 Tomcat 服务加载 3D Tiles 模型数据，在浏览器中呈现三维地理空间场景。</p><div class="project-tags"><span>Vue</span><span>Cesium</span><span>3D Tiles</span></div><p class="card-footer" data-en="Spatial data → An explorable scene">空间数据 → 可浏览的三维场景</p></article>
+        <article class="project-card" data-category="web"><div class="card-top"><span class="project-category" data-en="Interactive application">交互应用</span><span class="card-number">04</span></div><h3><a href="https://github.com/JinuxHao/Election-React">Election-React <span aria-hidden="true">↗</span></a></h3><p data-en="A US election simulation built with React components, exploring component-based interfaces and interactive application state.">基于 React 组件开发的美国大选模拟系统，实践组件化界面与交互式应用开发。</p><div class="project-tags"><span>JavaScript</span><span>React</span><span>Web</span></div><p class="card-footer" data-en="Components × Interactive simulation">组件化开发 × 交互模拟</p></article>
+      </div>
+    </section>
+
+    <section id="toolkit" class="section-shell editorial-section">
+      <div class="section-label"><span class="section-number">04 / TOOLKIT</span><h2 data-en="Tools in practice">实践中的工具</h2><p data-en="Tools used across my public projects.">来自公开项目的技术足迹。</p></div>
+      <div class="section-body toolkit"><div><h3 data-en="Models & computation">模型与计算</h3><p>MATLAB <span>/</span> C++ <span>/</span> PROSAIL</p></div><div><h3 data-en="Parallel programming">并行编程</h3><p>MPI <span>/</span> OpenMP</p></div><div><h3 data-en="Interfaces & spatial scenes">界面与空间表达</h3><p>JavaScript <span>/</span> React <span>/</span> Vue <span>/</span> Cesium</p></div></div>
+    </section>
+
+    <section id="contact" class="section-shell contact-section">
+      <span class="section-number">05 / CONTACT</span><h2 data-en="Good questions start conversations.">让一个好问题，<br>成为交流的开始。</h2><div class="contact-bottom"><p data-en="Interested in remote sensing, parallel computing or spatial visualization? Find my projects and public updates on GitHub.">如果你也关注遥感、并行计算或空间可视化，<br>欢迎在 GitHub 关注项目、交流想法。</p><a class="button button-primary" href="https://github.com/JinuxHao"><span data-en="Find me on GitHub">在 GitHub 找到我</span> ↗</a></div>
+    </section>
+  </main>
+  <footer class="site-footer"><a href="#home">Jinux Hao<span class="accent">.</span></a><span>© <span id="year">2026</span> Jinux Hao</span><a href="https://github.com/JinuxHao/jinuxhao.github.io" data-en="Built with curiosity ↗">以好奇心构建 ↗</a></footer>
+</body>
+</html>
